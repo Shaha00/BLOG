@@ -15,9 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from posts.views import main
+from posts.views import main, google, youtube, github, hello, date, goodbye
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main)
+    path('', main),
+    path('google/', google),
+    path('youtube/', youtube),
+    path('github/', github),
+    path('hello/', hello),
+    path('how_date/', date),
+    path('goodbye/', goodbye)
 ]
